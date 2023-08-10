@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useGlobalContext } from '../context/globalContext';
-
+import { rupee } from '../../utils/Icons';
 function History() {
     const {transactionHistory} = useGlobalContext()
 
@@ -24,7 +24,7 @@ function History() {
                             color: type === 'expense' ? 'red' : 'var(--color-green)'
                         }}>
                             {
-                                type === 'expense' ? `-${amount <= 0 ? 0 : amount}` : `+${amount <= 0 ? 0: amount}`
+                                type === 'expense' ? `-{rupee}{amount <= 0 ? 0 : amount}` : `+{rupee}{amount <= 0 ? 0: amount}`
                             }
                         </p>
                     </div>
