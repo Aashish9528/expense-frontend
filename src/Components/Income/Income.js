@@ -4,7 +4,7 @@ import { useGlobalContext } from '../../context/globalContext';
 import { InnerLayout } from '../../styles/Layouts';
 import Form from '../Form/Form';
 import IncomeItem from '../IncomeItem/IncomeItem';
-import rupee from '../../utils/icon.js'
+import { rupee } from '../../utils/Icons';
 function Income() {
     const {addIncome,incomes, getIncomes, deleteIncome, totalIncome} = useGlobalContext()
 
